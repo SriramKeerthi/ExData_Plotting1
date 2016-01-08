@@ -16,7 +16,7 @@ subMetering3 <- as.numeric(subData$Sub_metering_3)
 # Open the PNG device
 png("plot4.png", width=480, height=480)
 # Divide into 2 rows and 2 columns
-par(mfrow=c(2,2))
+par(mfrow=c(2,2), mar=c(4,4,2,1))
 
 # Plot the Global Active Power
 plot(dateTime, globalActivePower, type="l", xlab="", ylab="Global Active Power")
